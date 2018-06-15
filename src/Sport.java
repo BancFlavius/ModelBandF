@@ -1,7 +1,19 @@
 public abstract class Sport {
 
-    Sport(){
+    private int activePlayerCount;
+    private int registeredPlayerCount;
 
+    public Sport(int registeredPlayerCount, int activePlayerCount){
+        this.activePlayerCount = activePlayerCount;
+        this.registeredPlayerCount = registeredPlayerCount;
+    }
+
+    public int getActivePlayerCount() {
+        return activePlayerCount;
+    }
+
+    public int getRegisteredPlayerCount() {
+        return registeredPlayerCount;
     }
 
     abstract void players();
@@ -24,6 +36,6 @@ public abstract class Sport {
 
     abstract void official_field();
 
-
+    abstract void substitutions();
 
 }

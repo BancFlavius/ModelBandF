@@ -1,4 +1,10 @@
 public class Basketball extends Sport {
+
+   public Basketball(){
+       super(12, 5);
+   }
+
+
     @Override
     public void players(){
         System.out.println("Basketball is 5 on 5 ");
@@ -35,7 +41,12 @@ public class Basketball extends Sport {
     }
 
     public void break_ads(){
-        System.out.println("Usually when there is a break in basketball there are ads played on the court or choreographed dances");
+        System.out.println("Usually when there is a break in basketball there are ads played on the court or choreographed dances.");
+    }
+
+    @Override
+    public void substitutions(){
+        System.out.println("The rules of basketball allow an unlimited number of substitutions.");
     }
 
 

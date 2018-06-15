@@ -1,4 +1,9 @@
 public class Football extends Sport {
+
+    public Football(){
+        super(20, 11);
+    }
+
     @Override
     public void players(){
         System.out.println("Football is 11 on 11");
@@ -28,6 +33,11 @@ public class Football extends Sport {
 
     public void field(){
         System.out.println("A football game is played on a field and the distance between the goals is 100-110m.");
+    }
+
+    @Override
+    public void substitutions(){
+        System.out.println("The number of substitutes, up to a maximum of five.");
     }
 
 }
